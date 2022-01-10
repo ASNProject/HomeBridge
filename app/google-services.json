@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556416575529",
+    "firebase_url": "https://homebridge-ef297-default-rtdb.firebaseio.com",
+    "project_id": "homebridge-ef297",
+    "storage_bucket": "homebridge-ef297.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556416575529:android:4ba1c06a078a4dc2e75438",
+        "android_client_info": {
+          "package_name": "com.example.homebridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556416575529-glbgu5322mi62h0n05gnv9a9kvsvr1in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWgBfbDt_2vBq4YWCRvQRakbL370fYmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556416575529-glbgu5322mi62h0n05gnv9a9kvsvr1in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
