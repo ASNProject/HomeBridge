@@ -140,7 +140,7 @@
             android:layout_below="@id/text3"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="LAMP"
+            android:text="LAMP1"
             android:textStyle="bold"></TextView>
 
         <androidx.cardview.widget.CardView
@@ -165,9 +165,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/statuslamp1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="COLOR"
+                        android:textSize="10dp"
                         android:textStyle="bold"></TextView>
 
                     <LinearLayout
@@ -241,6 +243,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
                                 android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="10dp"
                                 android:background="@color/teal_700"
                                 android:text="OFF"
@@ -274,6 +277,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
                             android:text="Set Timer"
+                            android:textSize="10dp"
                             android:textStyle="bold"></TextView>
 
                         <LinearLayout
@@ -285,10 +289,12 @@
                                 android:layout_width="40dp"
                                 android:layout_height="wrap_content"
                                 android:text="ON"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="10dp"></TextView>
 
                             <EditText
                                 android:id="@+id/timeronlamp"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"></EditText>
                         </LinearLayout>
@@ -302,10 +308,12 @@
                                 android:layout_width="40dp"
                                 android:layout_height="wrap_content"
                                 android:text="OFF"
-                                android:textSize="20dp"></TextView>
+                                android:textSize="10dp"></TextView>
 
                             <EditText
                                 android:id="@+id/timerofflamp"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"></EditText>
                         </LinearLayout>
@@ -323,16 +331,603 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/text5"
+            android:id="@+id/text13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/card2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="LAMP2"
+            android:textStyle="bold"></TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text13"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="#D9DDDC"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statuslamp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COLOR"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/white1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/bulat"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/red1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/red"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/green1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/green"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/blue1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blue"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnofflamp1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/teal_700"
+                                android:text="OFF"
+                                app:backgroundTint="@null"></Button>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/modelamp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textOff="Manual"
+                            android:textOn="Timer"></ToggleButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Set Timer"
+                            android:textSize="10dp"
+                            android:textStyle="bold"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="ON"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timeronlamp1"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="OFF"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timerofflamp1"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/savetimerlamp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/teal_700"
+                            android:text="SAVE"
+                            app:backgroundTint="@null"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="LAMP3"
+            android:textStyle="bold"></TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text14"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="#D9DDDC"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statuslamp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COLOR"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/white2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/bulat"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/red2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/red"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/green2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/green"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/blue2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blue"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnofflamp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/teal_700"
+                                android:text="OFF"
+                                app:backgroundTint="@null"></Button>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/modelamp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textOff="Manual"
+                            android:textOn="Timer"></ToggleButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Set Timer"
+                            android:textSize="10dp"
+                            android:textStyle="bold"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="ON"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timeronlamp2"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="OFF"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timerofflamp2"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/savetimerlamp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/teal_700"
+                            android:text="SAVE"
+                            app:backgroundTint="@null"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="LAMP4"
+            android:textStyle="bold"></TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text15"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="#D9DDDC"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statuslamp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COLOR"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/white3"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/bulat"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/red3"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/red"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/green3"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/green"
+                                    app:backgroundTint="@null"></Button>
+
+                                <Button
+                                    android:id="@+id/blue3"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blue"
+                                    app:backgroundTint="@null"></Button>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnofflamp3"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/teal_700"
+                                android:text="OFF"
+                                app:backgroundTint="@null"></Button>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/modelamp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textOff="Manual"
+                            android:textOn="Timer"></ToggleButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Set Timer"
+                            android:textSize="10dp"
+                            android:textStyle="bold"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="ON"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timeronlamp3"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="OFF"
+                                android:textSize="10dp"></TextView>
+
+                            <EditText
+                                android:id="@+id/timerofflamp3"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></EditText>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/savetimerlamp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/teal_700"
+                            android:text="SAVE"
+                            app:backgroundTint="@null"></Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card9"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="20dp"
             android:text="FAN"
             android:textStyle="bold"></TextView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/card3"
             android:layout_width="match_parent"
@@ -355,41 +950,56 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text6"
+                        android:id="@+id/statusfan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:text="CONTROL"
+                        android:textSize="10dp"
                         android:textStyle="bold"></TextView>
 
                     <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/fanoff"
+                                android:layout_width="50dp"
+                                android:textSize="8dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content"
+                                android:text="OFF"></Button>
+                            <Button
+                                android:id="@+id/fan1"
+                                android:layout_width="50dp"
+                                android:textSize="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="1"></Button>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/fan2"
+                                android:layout_width="50dp"
+                                android:textSize="8dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content"
+                                android:text="2"></Button>
+                            <Button
+                                android:id="@+id/fan3"
+                                android:layout_width="50dp"
+                                android:textSize="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="3"></Button>
+                        </LinearLayout>
 
-                        <Button
-                            android:id="@+id/onfan"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="ON"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/green"></Button>
-
-                        <Button
-                            android:id="@+id/offfan"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="OFF"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/red"></Button>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -413,6 +1023,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:text="Set Timer"
+                        android:textSize="10dp"
                         android:textStyle="bold"></TextView>
 
                     <LinearLayout
@@ -424,12 +1035,14 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:text="ON"
-                            android:textSize="20dp"></TextView>
+                            android:textSize="10dp"></TextView>
 
                         <EditText
                             android:id="@+id/timeronfan"
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"></EditText>
                     </LinearLayout>
 
                     <LinearLayout
@@ -441,12 +1054,14 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:text="OFF"
-                            android:textSize="20dp"></TextView>
+                            android:textSize="10dp"></TextView>
 
                         <EditText
                             android:id="@+id/timerofffan"
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"></EditText>
                     </LinearLayout>
 
                     <Button
@@ -471,7 +1086,6 @@
             android:layout_marginRight="20dp"
             android:text="TV"
             android:textStyle="bold"></TextView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/card4"
             android:layout_width="match_parent"
@@ -480,6 +1094,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="1dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             app:cardBackgroundColor="#d9dddc"
             app:cardCornerRadius="10dp">
 
@@ -494,12 +1109,13 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text8"
+                        android:id="@+id/statustv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:text="CONTROL"
+                        android:textSize="10dp"
                         android:textStyle="bold"></TextView>
 
                     <LinearLayout
@@ -552,6 +1168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:text="Set Timer"
+                        android:textSize="10dp"
                         android:textStyle="bold"></TextView>
 
                     <LinearLayout
@@ -563,12 +1180,14 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:text="ON"
-                            android:textSize="20dp"></TextView>
+                            android:textSize="10dp"></TextView>
 
                         <EditText
                             android:id="@+id/timerontv"
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"></EditText>
                     </LinearLayout>
 
                     <LinearLayout
@@ -580,12 +1199,14 @@
                             android:layout_width="40dp"
                             android:layout_height="wrap_content"
                             android:text="OFF"
-                            android:textSize="20dp"></TextView>
+                            android:textSize="10dp"></TextView>
 
                         <EditText
                             android:id="@+id/timerofftv"
+                            android:textAlignment="center"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"></EditText>
                     </LinearLayout>
 
                     <Button
@@ -600,283 +1221,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/text9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card4"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="20dp"
-            android:text="REFRIGATOR"
-            android:textStyle="bold"></TextView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text9"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#d9dddc"
-            app:cardCornerRadius="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="CONTROL"
-                        android:textStyle="bold"></TextView>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/onref"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="ON"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/green"></Button>
-
-                        <Button
-                            android:id="@+id/offref"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="OFF"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/red"></Button>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
-
-                    <ToggleButton
-                        android:id="@+id/moderef"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textOff="Manual"
-                        android:textOn="Timer"></ToggleButton>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:text="Set Timer"
-                        android:textStyle="bold"></TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:text="ON"
-                            android:textSize="20dp"></TextView>
-
-                        <EditText
-                            android:id="@+id/timeronref"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:text="OFF"
-                            android:textSize="20dp"></TextView>
-
-                        <EditText
-                            android:id="@+id/timeroffref"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/saveref"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@color/teal_700"
-                        android:text="SAVE"
-                        app:backgroundTint="@null"></Button>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/text11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card5"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="20dp"
-            android:text="RELAY"
-            android:textStyle="bold"></TextView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text11"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="20dp"
-            app:cardBackgroundColor="#d9dddc"
-            app:cardCornerRadius="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="CONTROL"
-                        android:textStyle="bold"></TextView>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/onrelay"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="ON"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/green"></Button>
-
-                        <Button
-                            android:id="@+id/offrelay"
-                            android:layout_width="50dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="OFF"
-                            android:textSize="8dp"
-                            app:backgroundTint="@null"
-                            android:background="@color/red"></Button>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp">
-
-                    <ToggleButton
-                        android:id="@+id/moderelay"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textOff="Manual"
-                        android:textOn="Timer"></ToggleButton>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:text="Set Timer"
-                        android:textStyle="bold"></TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:text="ON"
-                            android:textSize="20dp"></TextView>
-
-                        <EditText
-                            android:id="@+id/timeronrelay"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="40dp"
-                            android:layout_height="wrap_content"
-                            android:text="OFF"
-                            android:textSize="20dp"></TextView>
-
-                        <EditText
-                            android:id="@+id/timeroffrelay"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></EditText>
-                    </LinearLayout>
-
-                    <Button
-                        android:id="@+id/saverelay"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@color/teal_700"
-                        android:text="SAVE"
-                        app:backgroundTint="@null"></Button>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
