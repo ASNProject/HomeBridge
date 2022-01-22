@@ -1,4 +1,4 @@
-# HomeBridge
+# HomeBridge App
 
 This a project about Internet of Things with Raspberry Pi. HomeBridge app can control 4 lamps RGB LED, Fan speed control, TV on/off. Furthermore this app can show the power consumption(kWh) and price power perday or monthly. All database connecting with Firebase database from Google.<br/>
 ### DESIGN OF HOMEBRIDGE APP<br/>
