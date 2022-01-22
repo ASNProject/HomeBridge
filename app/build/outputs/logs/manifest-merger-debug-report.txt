@@ -120,9 +120,9 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\arief\.gradle\cach
 	android:label
 		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:13:9-53
 	android:icon
-		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:11:9-42
 	android:allowBackup
 		ADDED from C:\Project\HomeBridge\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme

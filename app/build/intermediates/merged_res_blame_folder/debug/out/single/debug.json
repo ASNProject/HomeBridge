@@ -4,24 +4,32 @@
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_homebridge_round.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\homebridge_round.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_homebridge_round.xml.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-anydpi-v26\\homebridge_round.xml"
     },
     {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_homebridge.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-mdpi\\homebridge.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_homebridge_foreground.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\homebridge_foreground.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_homebridge_foreground.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\homebridge_foreground.png"
     },
     {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
@@ -32,6 +40,62 @@
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_homebridge.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\homebridge.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_red.xml.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\red.xml"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_homebridge_round.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\homebridge_round.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_bulat.xml.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\bulat.xml"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_homebridge.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\homebridge.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_homebridge_foreground.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\homebridge_foreground.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_homebridge.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\homebridge.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_homebridge.xml.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-anydpi-v26\\homebridge.xml"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_homebridge.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\homebridge.png"
+    },
+    {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -40,16 +104,12 @@
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_red.xml.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\red.xml"
-    },
-    {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_homebridge_round.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-mdpi\\homebridge_round.png"
     },
     {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_weather.png.flat",
@@ -64,19 +124,27 @@
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_blue.xml.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\blue.xml"
     },
     {
-        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_bulat.xml.flat",
-        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\bulat.xml"
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_homebridge_foreground.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-mdpi\\homebridge_foreground.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_homebridge_round.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\homebridge_round.png"
     },
     {
         "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\drawable_green.xml.flat",
         "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\drawable\\green.xml"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_homebridge_round.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xxhdpi\\homebridge_round.png"
+    },
+    {
+        "merged": "C:\\Project\\HomeBridge\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_homebridge_foreground.png.flat",
+        "source": "C:\\Project\\HomeBridge\\app\\src\\main\\res\\mipmap-xhdpi\\homebridge_foreground.png"
     }
 ]

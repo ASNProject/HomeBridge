@@ -4,8 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,9 +33,10 @@ import java.time.format.TextStyle;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
-private TextView ntemperature, nday, ndate, statuslamp1, statuslamp2, statuslamp3, statuslamp4, statusfan, statustv;
+private TextView ntemperature, nday, ndate, statuslamp1, statuslamp2, statuslamp3, statuslamp4, statusfan, statustv, sjumlahkwh,
+                shargaharian, shargabulanan, lamp1, lamp2, lamp3, lamp4, fan, tv;
 private Button btnwhite1, btnred1, btnblue1, btngreen1, btnofflamp1,
         btnwhite2, btnred2, btnblue2, btngreen2, btnofflamp2,
         btnwhite3, btnred3, btnblue3, btngreen3, btnofflamp3,
@@ -46,6 +53,11 @@ private EditText ntimeronlamp1, ntimerofflamp1,
         ntimerontv, ntimerofftv;
 
 private DatabaseReference database;
+private SensorManager sensorManager;
+private Sensor tempSensor;
+private Boolean isTemperatureSensorAvailable;
+
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -128,6 +140,28 @@ private DatabaseReference database;
         statusfan = (TextView) findViewById(R.id.statusfan);
         statustv = (TextView) findViewById(R.id.statustv);
 
+        //Kalkulasi
+        sjumlahkwh = (TextView) findViewById(R.id.jumlahkwh);
+        shargaharian = (TextView) findViewById(R.id.hargaharian);
+        shargabulanan = (TextView) findViewById(R.id.hargabulanan);
+        lamp1 = (TextView) findViewById(R.id.lamp1);
+        lamp2 = (TextView) findViewById(R.id.lamp2);
+        lamp3 = (TextView) findViewById(R.id.lamp3);
+        lamp4 = (TextView) findViewById(R.id.lamp4);
+        fan = (TextView) findViewById(R.id.fan);
+        tv = (TextView) findViewById(R.id.tv);
+
+        //Sensor
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        if (sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE)!=null)
+        {
+            tempSensor = sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
+            isTemperatureSensorAvailable = true;
+        }
+        else {
+            ntemperature.setText("0");
+            isTemperatureSensorAvailable = false;
+        }
 
         //Button LED 1
         btnwhite1.setOnClickListener(new View.OnClickListener() {
@@ -607,11 +641,89 @@ private DatabaseReference database;
         String dayname = dow.getDisplayName(TextStyle.FULL, Locale.ENGLISH);
         nday.setText(dayname);
 
+        //Perhitungan Kalkulasi
 
+        mdatabase.getReference("kwh").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Double nkawh = snapshot.getValue(Double.class);
+                String a = String.valueOf(String.format("%.3f", nkawh));
+                sjumlahkwh.setText(a + " " + "kWh");
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+        mdatabase.getReference("biayaharian").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Double harian = snapshot.getValue(Double.class);
+                String a = String.valueOf(String.format("%.2f", harian));
+                shargaharian.setText("Rp." + "" + a);
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+        mdatabase.getReference("biayabulanan").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Double bulanan = snapshot.getValue(Double.class);
+                String a = String.valueOf(String.format("%.2f", bulanan));
+                shargabulanan.setText("Rp." + "" + a);
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        mdatabase.getReference("temperature").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Integer temp = snapshot.getValue(Integer.class);
+                String a = String.valueOf(temp);
+                ntemperature.setText(a+"°C");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+     //   ntemperature.setText(sensorEvent.values[0]+"°C");
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        if(isTemperatureSensorAvailable){
+           // sensorManager.registerListener(this, tempSensor,SensorManager.SENSOR_DELAY_NORMAL);
+        }
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(isTemperatureSensorAvailable){
+            sensorManager.unregisterListener(this);
+        }
     }
 }

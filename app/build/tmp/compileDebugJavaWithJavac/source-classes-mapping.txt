@@ -48,6 +48,10 @@ com/example/homebridge/MainActivity.java
  com.example.homebridge.MainActivity$49
  com.example.homebridge.MainActivity$5
  com.example.homebridge.MainActivity$50
+ com.example.homebridge.MainActivity$51
+ com.example.homebridge.MainActivity$52
+ com.example.homebridge.MainActivity$53
+ com.example.homebridge.MainActivity$54
  com.example.homebridge.MainActivity$6
  com.example.homebridge.MainActivity$7
  com.example.homebridge.MainActivity$8

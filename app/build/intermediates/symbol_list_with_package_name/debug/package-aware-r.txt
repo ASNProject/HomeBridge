@@ -1172,6 +1172,7 @@ color foreground_material_light
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color homebridge_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1991,6 +1992,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id card1
+id card10
 id card2
 id card3
 id card4
@@ -2078,6 +2080,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id fan
 id fan1
 id fan2
 id fan3
@@ -2106,6 +2109,8 @@ id group_divider
 id grouping
 id groups
 id guideline
+id hargabulanan
+id hargaharian
 id header_title
 id hideable
 id home
@@ -2130,9 +2135,14 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
+id jumlahkwh
 id jumpToEnd
 id jumpToStart
 id labeled
+id lamp1
+id lamp2
+id lamp3
+id lamp4
 id layout
 id left
 id leftToRight
@@ -2356,6 +2366,7 @@ id text1
 id text13
 id text14
 id text15
+id text16
 id text2
 id text3
 id text4
@@ -2403,6 +2414,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv
 id unchecked
 id uniform
 id unlabeled
@@ -2586,6 +2598,9 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+mipmap homebridge
+mipmap homebridge_foreground
+mipmap homebridge_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
