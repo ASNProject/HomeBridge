@@ -554,9 +554,11 @@ private Boolean isTemperatureSensorAvailable;
             public void onClick(View view) {
                 if (modelamp1.isChecked()){
                     database.child("modelamp").setValue("Timer");
+                    database.child("led").setValue("1");
                 }
                 else{
                     database.child("modelamp").setValue("Manual");
+                    database.child("led").setValue("0");
                 }
                 database.child("timeronlamp1").setValue(ntimeronlamp1.getText().toString());
                 database.child("timerofflamp1").setValue(ntimerofflamp1.getText().toString());
@@ -565,66 +567,74 @@ private Boolean isTemperatureSensorAvailable;
         btnsavelamp2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (modelamp1.isChecked()){
+                if (modelamp2.isChecked()){
                     database.child("modelamp2").setValue("Timer");
+                    database.child("led2").setValue("1");
                 }
                 else{
                     database.child("modelamp2").setValue("Manual");
+                    database.child("led2").setValue("0");
                 }
-                database.child("timeronlamp2").setValue(ntimeronlamp1.getText().toString());
-                database.child("timerofflamp2").setValue(ntimerofflamp1.getText().toString());
+                database.child("timeronlamp2").setValue(ntimeronlamp2.getText().toString());
+                database.child("timerofflamp2").setValue(ntimerofflamp2.getText().toString());
             }
         });
         btnsavelamp3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (modelamp1.isChecked()){
+                if (modelamp3.isChecked()){
                     database.child("modelamp3").setValue("Timer");
+                    database.child("led3").setValue("1");
                 }
                 else{
                     database.child("modelamp3").setValue("Manual");
+                    database.child("led3").setValue("0");
                 }
-                database.child("timeronlamp3").setValue(ntimeronlamp1.getText().toString());
-                database.child("timerofflamp3").setValue(ntimerofflamp1.getText().toString());
+                database.child("timeronlamp3").setValue(ntimeronlamp3.getText().toString());
+                database.child("timerofflamp3").setValue(ntimerofflamp3.getText().toString());
             }
         });
         btnsavelamp4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (modelamp1.isChecked()){
+                if (modelamp4.isChecked()){
                     database.child("modelamp4").setValue("Timer");
+                    database.child("led4").setValue("1");
                 }
                 else{
                     database.child("modelamp4").setValue("Manual");
+                    database.child("led4").setValue("0");
                 }
-                database.child("timeronlamp4").setValue(ntimeronlamp1.getText().toString());
-                database.child("timerofflamp4").setValue(ntimerofflamp1.getText().toString());
+                database.child("timeronlamp4").setValue(ntimeronlamp4.getText().toString());
+                database.child("timerofflamp4").setValue(ntimerofflamp4.getText().toString());
             }
         });
         btnsavefan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (modelamp1.isChecked()){
+                if (modefan.isChecked()){
                     database.child("modefan").setValue("Timer");
+                    database.child("relay1").setValue("1");
                 }
                 else{
                     database.child("modefan").setValue("Manual");
+                    database.child("relay1").setValue("0");
                 }
-                database.child("timerfanon").setValue(ntimeronlamp1.getText().toString());
-                database.child("timerfanoff").setValue(ntimerofflamp1.getText().toString());
+                database.child("timerfanon").setValue(ntimeronfan.getText().toString());
+                database.child("timerfanoff").setValue(ntimerofffan.getText().toString());
             }
         });
         btnsavetv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (modelamp1.isChecked()){
+                if (modetv.isChecked()){
                     database.child("modetv").setValue("Timer");
                 }
                 else{
                     database.child("modetv").setValue("Manual");
                 }
-                database.child("timertvon").setValue(ntimeronlamp1.getText().toString());
-                database.child("timertvoff").setValue(ntimerofflamp1.getText().toString());
+                database.child("timertvon").setValue(ntimerontv.getText().toString());
+                database.child("timertvoff").setValue(ntimerofftv.getText().toString());
             }
         });
 
